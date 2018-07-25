@@ -4,20 +4,16 @@ li {
 
 #left-nav{
   position:fixed;
-  min-width:290px;
   top:0px;
   left:0px;
-  width:20%;
   height:100%;
-  margin:71px 0 0 0;
+  margin-top:71px;
 }
 
 #main-sect{
   position: absolute;
-  padding:60px;
-  width: 80%;
   height: 100%;
-  margin:71px 0 110px 20%;
+  margin-top: 71px;
 }
 
 code{

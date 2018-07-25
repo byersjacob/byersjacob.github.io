@@ -37,49 +37,53 @@
       </div>
     </nav>
 
-    <div id="left-nav" class="bg-light">
-      <img src="img/byers_bigpic.jpg" class="rounded-circle img-fluid mx-auto d-block mt-5" style="width:200px;">
-      <h3 class="text-dark text-center my-3"><strong>Jacob Byers</strong></h2>
-      <div class="text-center">
-        <a href="https://www.facebook.com/byers.jacob" target="_blank"><i class="fab fa-behance-square fa-2x mx-1"></i></a>
-        <a href="https://twitter.com/byersjacob" target="_blank"><i class="fab fa-github fa-2x mx-1"></i></a>
-        <a href="https://www.instagram.com/byebyers/" target="_blank"><i class="fab fa-twitter-square fa-2x mx-1"></i>
-        </a>
+    <div class="container-fluid no-gutters">
+      <div class="row">
+      <div id="left-nav" class="bg-light col-2 p-0">
+        <img src="img/byers_bigpic.jpg" class="rounded-circle img-fluid mx-auto d-block mt-5" style="width:200px;">
+        <h3 class="text-dark text-center my-3"><strong>Jacob Byers</strong></h2>
+        <div class="text-center">
+          <a href="https://www.facebook.com/byers.jacob" target="_blank"><i class="fab fa-behance-square fa-2x mx-1"></i></a>
+          <a href="https://twitter.com/byersjacob" target="_blank"><i class="fab fa-github fa-2x mx-1"></i></a>
+          <a href="https://www.instagram.com/byebyers/" target="_blank"><i class="fab fa-twitter-square fa-2x mx-1"></i>
+          </a>
+        </div>
+        <div class="list-group mt-4">
+          <a href="#" class="list-group-item list-group-item-action">Summary</a>
+          <a href="#" class="list-group-item list-group-item-action">Development</a>
+          <a href="#" class="list-group-item list-group-item-action">Programming</a>
+          <a href="#" class="list-group-item list-group-item-action">Work</a>
+          <a href="#" class="list-group-item list-group-item-action">Education</a>
+        </div>
       </div>
-      <div class="list-group mt-4">
-        <a href="#" class="list-group-item list-group-item-action">Summary</a>
-        <a href="#" class="list-group-item list-group-item-action">Development</a>
-        <a href="#" class="list-group-item list-group-item-action">Programming</a>
-        <a href="#" class="list-group-item list-group-item-action">Work</a>
-        <a href="#" class="list-group-item list-group-item-action">Education</a>
+
+      <div id="main-sect" class="col-10 offset-2 p-5">
+        <section class="mb-5">
+          <h3 class="mb-2">What you should already know</h3>
+          <article>
+            <p>This guide assumes you have the following basic background:</p>
+
+            <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
+            <li>Good working knowledge of HyperText Markup Language (HTML).</li>
+            <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
+          </artice>
+        </section>
+        <section class="mb-5">
+          <h3 class="mb-2">Hello world</h3>
+          <article>
+            To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
+          <code>function greetMe(yourName) {
+            alert("Hello " + yourName);
+          }
+          greetMe("World");
+          </code>
+
+            Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
+          </article>
+        </section>
       </div>
     </div>
-
-    <div id="main-sect">
-      <section class="mb-5">
-        <h3 class="mb-2">What you should already know</h3>
-        <article>
-          <p>This guide assumes you have the following basic background:</p>
-
-          <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
-          <li>Good working knowledge of HyperText Markup Language (HTML).</li>
-          <li>Some programming experience. If you are new to programming, try one of the tutorials linked on the main page about JavaScript.</li>
-        </artice>
-      </section>
-      <section class="mb-5">
-        <h3 class="mb-2">Hello world</h3>
-        <article>
-          To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code:
-        <code>function greetMe(yourName) {
-          alert("Hello " + yourName);
-        }
-        greetMe("World");
-        </code>
-
-          Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!
-        </article>
-      </section>
-    </div>
+  </div>
 
 <!--
     <main id="main-doc">
