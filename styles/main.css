@@ -39,7 +39,7 @@ code{
   margin: 119px 0 0 0;
 }
 
-@media only screen and (max-width: 1125px) {
+@media only screen and (max-width: 766px) {
   .nav-icons {
       display: none;
   }
@@ -48,7 +48,7 @@ code{
   }
 }
 
-@media only screen and (max-width: 1900px) {
+@media only screen and (max-width: 991px) {
     #main-sect{
       margin-top: 0 !important;
     }
