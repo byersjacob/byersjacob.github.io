@@ -36,12 +36,20 @@ code{
 }
 
 #mobile-prof {
-  margin-top:var(--main-t-margin);
-  height:100px;
+  margin: 119px 0 0 0;
 }
 
-@media only screen and (max-width: 600px) {
-    .nav-icons {
-        display: none;
+@media only screen and (max-width: 766px) {
+  .nav-icons {
+      display: none;
+  }
+  #mobile-prof {
+    margin: 70px 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+    #main-sect{
+      margin-top: 0 !important;
     }
 }

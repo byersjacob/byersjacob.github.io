@@ -40,23 +40,31 @@
         </div>
       </div>
 
-			<div id="mobile-prof" class="bg-light d-lg-none col-md-12 p-0">
-				<div class="row">
-					<div class="col-4">
-		        <img src="img/byers_bigpic.jpg" class="rounded-circle img-fluid px-3 my-auto ml-auto d-block" style="height:80px">
+			<div id="mobile-prof" class="bg-light d-lg-none col-md-5 card border-primary p-0">
+				<div class="row m-0 align-items-center py-3">
+					<div class="col-2">
 					</div>
-					<div class="col-8">
-						<h3 class="text-dark text-center mt-3"><strong>Jacob Byers</strong></h2>
-		        <h4 class="text-dark text-center">Full Stack Developer</h4>
+					<div class="col-8 p-0">
+						<div class="row">
+							<div class="col-4 p-0">
+				        <img src="img/byers_bigpic.jpg" class="rounded-circle img-fluid ml-auto d-block" style="max-height:80px">
+							</div>
+							<div class="col-8 pr-0">
+								<h3 class="text-dark text-left mb-0"><strong>Jacob Byers</strong></h2>
+				        <h5 class="text-dark text-left mb-0">Full Stack Developer</h5>
+							</div>
+							<!--
+			        <div class="text-center">
+			          <a href="https://www.facebook.com/byers.jacob" target="_blank"><i class="fab fa-behance-square fa-2x mx-1"></i></a>
+			          <a href="https://twitter.com/byersjacob" target="_blank"><i class="fab fa-github fa-2x mx-1"></i></a>
+			          <a href="https://www.instagram.com/byebyers/" target="_blank"><i class="fab fa-twitter-square fa-2x mx-1"></i>
+			          </a>
+			        </div>
+			        -->
+						</div>
 					</div>
-					<!--
-	        <div class="text-center">
-	          <a href="https://www.facebook.com/byers.jacob" target="_blank"><i class="fab fa-behance-square fa-2x mx-1"></i></a>
-	          <a href="https://twitter.com/byersjacob" target="_blank"><i class="fab fa-github fa-2x mx-1"></i></a>
-	          <a href="https://www.instagram.com/byebyers/" target="_blank"><i class="fab fa-twitter-square fa-2x mx-1"></i>
-	          </a>
-	        </div>
-	        -->
+					<div class="col-2">
+					</div>
 				</div>
       </div>
 
@@ -130,7 +138,7 @@
 	<script>
 		$(window).on('load, resize', function mobileViewUpdate() {
 			var viewportWidth = $(window).width();
-			if (viewportWidth < 600) {
+			if (viewportWidth < 766) {
 					$("#logoimg").removeClass("mr-auto").addClass("mx-auto");
 			}
 			else {
