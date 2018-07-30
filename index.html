@@ -36,8 +36,9 @@
 		      </li>
 		    </ul>
 			</div>
-      <img src="img/logo.png" id="logoimg" class="rounded-circle img-fluid mr-auto d-block" style="width:55px;">
-			<div class="nav-icons">
+      <img src="img/logo.png" id="logoimg" class="rounded-circle img-fluid ml-auto d-lg-none d-block" style="width:55px;">
+			<img src="img/logo.png" id="logoimg" class="rounded-circle img-fluid mr-auto d-none d-lg-block" style="width:55px;">
+			<div class="d-none d-lg-block">
 	      <a href="https://www.facebook.com/byers.jacob" target="_blank"><i class="fab fa-behance-square fa-inverse fa-2x mx-1"></i></a>
 	      <a href="https://twitter.com/byersjacob" target="_blank"><i class="fab fa-github fa-inverse fa-2x mx-1"></i></a>
 	      <a href="https://www.instagram.com/byebyers/" target="_blank"><i class="fab fa-twitter-square fa-inverse fa-2x mx-1"></i></a>
@@ -89,8 +90,8 @@
 			        </div>
 			        -->
 						</div>
-						<hr class="d-md-none">
-						<div class="text-center d-md-none">
+						<hr>
+						<div class="text-center">
 				      <a href="https://www.facebook.com/byers.jacob" target="_blank"><i class="fab fa-behance-square fa-2x mx-1"></i></a>
 				      <a href="https://twitter.com/byersjacob" target="_blank"><i class="fab fa-github fa-2x mx-1"></i></a>
 				      <a href="https://www.instagram.com/byebyers/" target="_blank"><i class="fab fa-twitter-square fa-2x mx-1"></i></a>
@@ -168,16 +169,5 @@
       </div>
     </div>
   </div>
-	<script>
-		$(window).on('load, resize', function mobileViewUpdate() {
-			var viewportWidth = $(window).width();
-			if (viewportWidth < 766) {
-					$("#logoimg").removeClass("mr-auto").addClass("ml-auto");
-			}
-			else {
-					$("#logoimg").removeClass("ml-auto").addClass("mr-auto");
-			}
-			});
-	</script>
 	</body>
 </html>
