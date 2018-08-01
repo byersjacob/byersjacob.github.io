@@ -15,8 +15,13 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script>
+	    var shiftWindow = function() { scrollBy(0, -100) };
+	    window.addEventListener("hashchange", shiftWindow);
+	    function load() { if (window.location.hash) shiftWindow(); }
+	  </script>
 	</head>
-	<body>
+	<body onload="load()">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -24,16 +29,16 @@
 			<div class="d-md-none collapse" id="navbarColor01">
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="#n-skills">Skills <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Features</a>
+		        <a class="nav-link" href="#n-projects">Projects</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Pricing</a>
+		        <a class="nav-link" href="#n-gigs">Gigs</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">About</a>
+		        <a class="nav-link" href="#n-contact">Contact</a>
 		      </li>
 		    </ul>
 			</div>
@@ -60,16 +65,16 @@
         </div>
         -->
         <div class="list-group mt-4">
-					<a href="#" target="_blank" class="text-white">
+					<a href="#n-skills" class="text-white">
 						<button type="button" class="btn btn-primary btn-lg btn-block mt-4 text-left pl-3"><i class="fas fa-certificate fa-inverse mr-3"></i>Skills</button>
 					</a>
-					<a href="#" target="_blank" class="text-white">
+					<a href="#n-projects" class="text-white">
 						<button type="button" class="btn btn-primary btn-lg btn-block mt-0 text-left pl-3"><i class="fas fa-project-diagram fa-inverse mr-3"></i>Projects</button>
 					</a>
-					<a href="#" target="_blank" class="text-white">
+					<a href="#n-gigs" class="text-white">
 						<button type="button" class="btn btn-primary btn-lg btn-block mt-0 text-left pl-3"><i class="fas fa-building fa-inverse mr-3"></i>Gigs</button>
 					</a>
-					<a href="#" target="_blank" class="text-white">
+					<a href="#n-contact" class="text-white">
 						<button type="button" class="btn btn-primary btn-lg btn-block mt-0 text-left pl-3"><i class="fas fa-user fa-inverse mr-3"></i>Contact</button>
 					</a>
 			  </div>
@@ -110,7 +115,7 @@
 		</div>
 		<div class="row">
 			<div id="main-sect" class="col-lg-10 col-md-12 offset-lg-2 pl-lg-5 pt-5">
-				<div class="row no-gutters">
+				<div id="n-skills" class="row no-gutters">
 					<div class="col-12 ml-md-3 mb-3">
 						<h4>Skills</h4>
 					</div>
@@ -168,7 +173,7 @@
 				</div>
 				<div class="row no-gutters mt-4">
 					<div class="col-12 ml-md-3 mb-3">
-						<h4>Projects</h4>
+						<h4 id="n-projects">Projects</h4>
 					</div>
 					<div class="col-md-3 card border-primary ml-md-3 mb-3">
 					  <div class="card-header"><i class="fas fa-bezier-curve mr-2"></i>Ohmni Website</div>
@@ -239,7 +244,7 @@
 				</div>
 				<div class="row no-gutters mt-4">
 					<div class="col-12 ml-md-3 mb-3">
-						<h4>Gigs</h4>
+						<h4 id="n-gigs">Gigs</h4>
 					</div>
 					<div class="col-md-3 card border-success ml-md-3 mb-3">
 					  <div class="card-header"><i class="far fa-building mr-2"></i>JEB</div>
@@ -254,7 +259,7 @@
 								<li>UX/UI</li>
 								<li>Developer Services</li>
 							</ul>
-							<a href="#" target="_blank" class="text-white">
+							<a href="#n-contact" class="text-white">
 								<button type="button" class="btn btn-success">Contact</button>
 							</a>
 						</div>
@@ -299,7 +304,7 @@
 			</div>
 		</div>
 		<div class="row no-gutters mt-4">
-			<div class="pl-lg-5 col-lg-8 col-md-12 offset-lg-2">
+			<div id="n-contact" class="pl-lg-5 col-lg-8 col-md-12 offset-lg-2">
 				<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRbMJB7D057ct8Y9-_xa7pCpnNeolEFPehRj2h9UZq3fQMUw/viewform?embedded=true" width="100%" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
 			</div>
 		</div>
