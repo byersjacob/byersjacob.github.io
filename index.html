@@ -34,6 +34,8 @@
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+		<script type="text/javascript" src="styles/main.js"></script>
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87909907-2">
 		</script>
@@ -331,27 +333,11 @@
     </div>
 
 		<script async>
-				window.dataLayer = window.dataLayer || [];
-
-				function gtag() {
-						dataLayer.push(arguments);
-				}
-				gtag('js', new Date());
-				gtag('config', 'UA-87909907-2');
-		</script>
-
-		<script type="text/javascript" src="styles/main.js">
+				function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","UA-87909907-2");
 		</script>
 
 		<script async>
-				var shiftWindow = function() {
-						scrollBy(0, -100)
-				};
-				window.addEventListener("hashchange", shiftWindow);
-
-				function load() {
-						if (window.location.hash) shiftWindow();
-				}
+				var shiftWindow=function(){scrollBy(0,-100)};function load(){window.location.hash&&shiftWindow()}window.addEventListener("hashchange",shiftWindow);
 		</script>
 </body>
 
