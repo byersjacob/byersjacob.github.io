@@ -1,1 +1,85 @@
-:root{--main-t-margin:4.5rem}li{margin-left:1rem}#left-nav{position:fixed;top:0rem;left:0rem;height:100%;margin-top:var(--main-t-margin)}#main-sect{height:100%;margin-top:var(--main-t-margin)}code{display:block;text-align:left;white-space:pre;position:relative;word-break:normal;word-wrap:normal;line-height:2;background-color:#f7f7f7;padding:1rem;margin:.6rem 0;border-radius:.3rem}#mobile-prof{margin:7.5rem 0 0 0}@media only screen and (max-width: 47.9rem){#mobile-prof{margin:4.5rem 0 0 0}}@media only screen and (max-width: 62rem){#main-sect{margin-top:0 !important}}
+:root {
+    --main-t-margin: 4.5rem
+}
+
+li {
+    margin-left: 1rem
+}
+
+#left-nav {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    margin-top: var(--main-t-margin)
+}
+
+#main-sect {
+    height: 100%;
+    margin-top: var(--main-t-margin)
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #f7f7f7;
+    padding: 1rem;
+    margin: .6rem 0;
+    border-radius: .3rem
+}
+
+#mobile-prof {
+    margin: 7.5rem 0 0 0
+}
+
+.big-banner {
+  background-image: url('../img/web.jpg');
+  /* Full height */
+  height: 100vh;
+  margin-top: -6em;;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+
+  /* Flexbox */
+  display: flex;
+  align-items: center;
+}
+
+.myshadow {
+  text-shadow: 1px 1px 8px #000;
+}
+
+.ohinvert {
+  filter: invert(0%);
+  transition: filter 0.2s linear; /* vendorless fallback */
+    -o-transition: filter 0.2s linear; /* opera */
+    -ms-transition: filter 0.2s linear; /* IE 10 */
+    -moz-transition: filter 0.2s linear; /* Firefox */
+    -webkit-transition: filter 0.2s linear; /*safari and chrome */
+}
+
+.ohinvert:hover {
+  filter: invert(100%);
+}
+
+@media only screen and (max-width: 47.9rem) {
+    #mobile-prof {
+        margin: 4.5rem 0 0 0
+    }
+}
+
+@media only screen and (max-width: 62rem) {
+    #main-sect {
+        margin-top: 0 !important
+    }
+}
