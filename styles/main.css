@@ -59,6 +59,19 @@ code {
   text-shadow: 1px 1px 8px #000;
 }
 
+.ohinvert {
+  filter: invert(0%);
+  transition: filter 0.2s linear; /* vendorless fallback */
+    -o-transition: filter 0.2s linear; /* opera */
+    -ms-transition: filter 0.2s linear; /* IE 10 */
+    -moz-transition: filter 0.2s linear; /* Firefox */
+    -webkit-transition: filter 0.2s linear; /*safari and chrome */
+}
+
+.ohinvert:hover {
+  filter: invert(100%);
+}
+
 @media only screen and (max-width: 47.9rem) {
     #mobile-prof {
         margin: 4.5rem 0 0 0
