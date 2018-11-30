@@ -41,7 +41,7 @@ code {
   background-image: url('../img/web.jpg');
   /* Full height */
   height: 100vh;
-  margin-top: -6em;;
+  margin-top: -6em;
 
   /* Center and scale the image nicely */
   background-attachment: fixed;
@@ -82,4 +82,13 @@ code {
     #main-sect {
         margin-top: 0 !important
     }
+
+}
+
+@media only screen and (max-width: 84rem) {
+    .big-banner {
+      height: 40rem;
+      background-attachment: local;
+    }
+
 }
